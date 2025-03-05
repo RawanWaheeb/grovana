@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Home/Home";
 import AiScaner from "./Components/aiScaner/AiScaner";
-import Community from "./Components/community/Community";
+import Community from "./Components/Community/Community";
+
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/AiScaner" element={<AiScaner />} />
-          <Route path="/Community" element={<Community />} />
+          <Route path="/community" element={<Community />} />
         </Route>
       </Routes>
     </Router>
